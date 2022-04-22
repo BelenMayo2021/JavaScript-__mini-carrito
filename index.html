@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Mini-carrito</title>
+
+</head>
+<body>
+
+    <main class="container mt-5">
+
+        <div class="row text-center">
+
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title m-3">
+                            Frutilla 🍓
+                        </h5>
+                        <button 
+                        class="btn btn-outline-primary m-3"
+                        data-fruta="Frutilla">
+                            AGREGAR
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title m-3">
+                            Banana 🍌
+                        </h5>
+                        <button 
+                        class="btn btn-outline-primary m-3"
+                        data-fruta="Banana">
+                            AGREGAR
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title m-3">
+                            Manzana 🍏 
+                        </h5>
+                        <button class="btn btn-outline-primary m-3"
+                        data-fruta="Manzana">
+                            AGREGAR
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+
+
+
+
+
+        </div>
+    </main>
+
+
+    <section class="container mt-3">
+        <ul class="list-group" id="carrito">
+        </ul>
+    </section>
+
+<!--  el li es el elemento que se repite -->
+<template id="template">
+    <li class="list-group-item d-flex justify-content-between algin-items-center" style="background-color: rgb(219, 234, 241);" >
+        <span class="lead" >Frutilla</span>
+        <span class="badge bg-primary rounded-pill" >12</span>
+    </li>
+</template>
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
